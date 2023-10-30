@@ -1,8 +1,8 @@
 {
 
-    "manifest_version": 2,
+    "manifest_version": 3,
     "name": "Select and Copy",
-    "version": "2.0",
+    "version": "3.0",
   
     "description": "Allowes you to easily copy, without using CTR + C or CMD + C.",
   
@@ -26,5 +26,5 @@
           "id": "rayeole@gmail.com"
         }
       },
-      "author": "Rohan Yeole, Cruncher.in"
+      "author": "Rohan Yeole, djangoproject.in"
   }
