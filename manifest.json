@@ -9,7 +9,11 @@
     "icons": {
       "48": "icons/icon.svg"
     },
-  
+   "permissions": [
+    "activeTab", // Allows the extension to interact with the active tab
+    "clipboardWrite", // Allows the extension to write to the clipboard
+    "clipboardRead" // Allows the extension to read from the clipboard
+  ],
     "content_scripts": [
       {
         "matches" : ["<all_urls>"],
