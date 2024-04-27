@@ -1,34 +1,29 @@
 {
+  "manifest_version": 3,
+  "name": "Select and Copy",
+  "version": "3.0",
 
-    "manifest_version": 3,
-    "name": "Select and Copy",
-    "version": "3.0",
-  
-    "description": "Allowes you to easily copy, without using CTR + C or CMD + C.",
-  
-    "icons": {
-      "48": "icons/icon.svg"
-    },
-   "permissions": [
-    "activeTab",
-    "clipboardWrite",
-    "clipboardRead"
+  "description": "Allowes you to easily copy, without using CTR + C or CMD + C.",
+
+  "icons": {
+    "48": "icons/icon.svg"
+  },
+  "permissions": ["activeTab", "clipboardWrite", "clipboardRead"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["/select-copy.js"]
+    }
   ],
-    "content_scripts": [
-      {
-        "matches" : ["<all_urls>"],
-        "js": ["/select-copy.js"]
-      }
-    ],
-    "browser_action":{
-      "browser_style" : true,
-      "default_title" : "Select and Copy",
-      "default_popup" : "/main.html"
-    },
-    "browser_specific_settings": {
-        "gecko": {
-          "id": "rayeole@gmail.com"
-        }
-      },
-      "author": "Rohan Yeole, djangoproject.in"
-  }
+  "browser_action": {
+    "browser_style": true,
+    "default_title": "Select and Copy",
+    "default_popup": "/main.html"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "rayeole@gmail.com"
+    }
+  },
+  "author": "Rohan Yeole, djangoproject.in"
+}
